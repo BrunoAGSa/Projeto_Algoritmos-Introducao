@@ -1,0 +1,38 @@
+LOCUS       HIVI5C                   231 bp    DNA     linear   VRL 24-MAR-1997
+DEFINITION  Human immunodeficiency virus type 1 (isolate genotype C, I5) gag
+            gene, partial cds.
+ACCESSION   L42022
+VERSION     L42022.1
+KEYWORDS    gag gene; p24 protein.
+SOURCE      Human immunodeficiency virus 1 (HIV-1)
+  ORGANISM  Human immunodeficiency virus 1
+            Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes;
+            Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus.
+REFERENCE   1  (bases 1 to 231)
+  AUTHORS   Voevodin,A., Crandall,K.A., Seth,P. and al Mufti,S.
+  TITLE     HIV type 1 subtypes B and C from new regions of India and Indian
+            and Ethiopian expatriates in Kuwait
+  JOURNAL   AIDS Res. Hum. Retroviruses 12 (7), 641-643 (1996)
+   PUBMED   8743090
+FEATURES             Location/Qualifiers
+     source          1..231
+                     /organism="Human immunodeficiency virus 1"
+                     /proviral
+                     /mol_type="genomic DNA"
+                     /isolate="genotype C, I5"
+                     /db_xref="taxon:11676"
+     gene            1..231
+                     /gene="gag"
+     CDS             <1..>231
+                     /gene="gag"
+                     /codon_start=1
+                     /protein_id="AAB50165.1"
+                     /translation="HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQVAWMTGNPPVPVG
+                     EIYKRWIILGLNKIVRMYSPVSILDIKQGPKEP"
+ORIGIN      
+        1 catccagtac atgcagggcc tattgcacca ggccaaatga gagaaccaag gggaagtgac
+       61 atagcaggaa ctacaagtac ccttcaggaa caagtagcat ggatgacagg taacccacct
+      121 gttccagtgg gagaaatcta taaaagatgg ataattctgg gattaaataa aatagtaaga
+      181 atgtatagcc ctgtcagcat tttggacata aaacaagggc caaaggaacc c
+//
+
