@@ -21,7 +21,7 @@ where Organism = "Ectocarpus siliculosus";
 # 2 Foi analisada uma Proteina cujo nome é DnaA-like replication initiation protein.
 # Qual o Organismo a qual esta pertence?
 
-select * from Genbank
+select Organism from Genbank
 join Features on Genbank.ID_version_seq = Features.ID_version_genbank
 join CDS on Features.ID_version_genbank = CDS.Id_version_features
 where Protein = '[''DnaA-like replication initiation protein'']'
