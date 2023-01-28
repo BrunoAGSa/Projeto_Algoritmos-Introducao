@@ -1,0 +1,7 @@
+teste\_123321 module
+====================
+
+.. automodule:: teste_123321
+   :members:
+   :undoc-members:
+   :show-inheritance:
