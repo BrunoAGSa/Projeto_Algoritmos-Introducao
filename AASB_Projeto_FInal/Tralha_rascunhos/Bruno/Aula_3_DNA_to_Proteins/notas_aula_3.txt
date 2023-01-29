@@ -1,0 +1,16 @@
+Reversed --> Dicionario (Aminoacido : Codões)
+my_amino2dna (amino) --> String Aminoacido --> String Nucleotidos DNA
+amino2dna(amino) --> String Aminoacido --> String Nucleotidos DNA
+comp_inv (dna) --> String de DNA --> String DNA (Comp_inv)
+get_random_str(avg_sz, chars) --> Int , String --> Random String com os chars Random
+gen_prot(avg_sz) --> Int --> Gerar proteina com X tamanho (avg_sz)
+random_intron(avg_sz) --> INt --> Gera frag de DNA com x tamanho  (avg_sz)
+get_dna1_3(num_prots, avg_intron_size, avg_prot_size) --> 2 variaveis (Seq de DNA e respetivas Prots)
+
+dna = "acgatcagtcacACAGTCGATCAGCATGASasajhakjshakjshaksdhsjdhsjdhsdjhsdSKJSKJSKJSkkjkjkj"
+
+prot = "Masas_"
+
+protS = [Masas_,] 
+
+ACDF

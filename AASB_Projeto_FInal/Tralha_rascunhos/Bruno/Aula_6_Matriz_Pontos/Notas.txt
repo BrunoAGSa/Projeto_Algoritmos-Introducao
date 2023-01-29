@@ -1,0 +1,7 @@
+L --> Numero da Linha index
+C --> Numerp da COlunas index
+
+X1 valor correspondente a posiçao 
+x2 valor correspondente a posiçao 
+
+L e X1 param na primeira seq enquanto R e X2 mexem 
