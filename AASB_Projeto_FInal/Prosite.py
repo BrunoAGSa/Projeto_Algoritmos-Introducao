@@ -1,11 +1,12 @@
 def prosite(seq, pattern): 
                         
-    from re import search
     """Função que permite converter uma expressão do padrão Prosite numa expressão regular
 
     Returns:
         str: Expressão regular
     """
+    
+    from re import search
     er = pattern.replace("-","")
     er = er.replace("x",".")
     er = er.replace("(","{")

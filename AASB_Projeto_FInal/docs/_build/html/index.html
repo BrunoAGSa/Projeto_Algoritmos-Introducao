@@ -42,6 +42,8 @@
 <li><a class="reference internal" href="#module-Alinhamento_Nw_Sw_Mult">Alinhamento_Nw_Sw_Mult module</a></li>
 <li><a class="reference internal" href="#module-BD_Blast">BD_Blast module</a></li>
 <li><a class="reference internal" href="#module-Motifs">Motifs module</a></li>
+<li><a class="reference internal" href="#module-Prosite">Prosite module</a></li>
+<li><a class="reference internal" href="#module-Enzyme_restriction">Enzyme_restriction module</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </div>
@@ -69,7 +71,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>Welcome to Projeto AASB’s documentation!</p>
+  <p>Bem vindos à documentação do nosso Projeto AASB!</p>
 <p>Bom dia, Professor!</p>
 <p>Está aqui a documentação relativa ao nosso código</p>
 <hr class="docutils" />
@@ -878,6 +880,151 @@ as aulas teóricas</p>
 <dt class="sig sig-object py" id="Motifs.Test_Motifs.test_prob_seq">
 <span class="sig-name descname"><span class="pre">test_prob_seq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Test_Motifs.test_prob_seq" title="Permalink to this definition"></a></dt>
 <dd><p>Testar a função prob_seq</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Prosite">
+<span id="prosite-module"></span><h1>Prosite module<a class="headerlink" href="#module-Prosite" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Prosite.Test_Prosite">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Prosite.</span></span><span class="sig-name descname"><span class="pre">Test_Prosite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Prosite.Test_Prosite" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Conjunto de testes para a classe Prosite</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Prosite.Test_Prosite.test_prosite">
+<span class="sig-name descname"><span class="pre">test_prosite</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Prosite.Test_Prosite.test_prosite" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função prosite</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Prosite.prosite">
+<span class="sig-prename descclassname"><span class="pre">Prosite.</span></span><span class="sig-name descname"><span class="pre">prosite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Prosite.prosite" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite converter uma expressão do padrão Prosite numa expressão regular</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Expressão regular</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-Enzyme_restriction">
+<span id="enzyme-restriction-module"></span><h1>Enzyme_restriction module<a class="headerlink" href="#module-Enzyme_restriction" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Enzyme_restriction.Enzyme_Restriction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Enzyme_restriction.</span></span><span class="sig-name descname"><span class="pre">Enzyme_Restriction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enzyme</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Enzyme_Restriction" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Enzyme_Restriction.IUB">
+<span class="sig-name descname"><span class="pre">IUB</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Enzyme_Restriction.IUB" title="Permalink to this definition"></a></dt>
+<dd><p>Conversão da enzima de restrição na expressao regular correspondente.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Expressão regular</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Enzyme_Restriction.cut_positions">
+<span class="sig-name descname"><span class="pre">cut_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Enzyme_Restriction.cut_positions" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite determinar as posições onde a enzima de restrição “corta” a sequência.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>lista das posições de “corte”</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Enzyme_Restriction.cut_positions_re">
+<span class="sig-name descname"><span class="pre">cut_positions_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Enzyme_Restriction.cut_positions_re" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite determinar as posições onde a enzima de restrição “corta” a sequência complementar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>lista das posições de “corte”</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Enzyme_Restriction.cut_subsequences">
+<span class="sig-name descname"><span class="pre">cut_subsequences</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Enzyme_Restriction.cut_subsequences" title="Permalink to this definition"></a></dt>
+<dd><p>Função que determina as subsequências resultantes do corte da sequência (seq) usando os índices na lista locs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>lista das subsequências</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Enzyme_Restriction.cut_subsequences_re">
+<span class="sig-name descname"><span class="pre">cut_subsequences_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Enzyme_Restriction.cut_subsequences_re" title="Permalink to this definition"></a></dt>
+<dd><p>Função que determina as subsequências resultantes do corte da sequência completamentar (seq) usando os índices na lista locs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>lista das subsequências</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Enzyme_restriction.Test_Enzyme_Restriction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Enzyme_restriction.</span></span><span class="sig-name descname"><span class="pre">Test_Enzyme_Restriction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Test_Enzyme_Restriction" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Test_Enzyme_Restriction.test_IUB">
+<span class="sig-name descname"><span class="pre">test_IUB</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Test_Enzyme_Restriction.test_IUB" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função IUB() da classe Enzyme_Restriction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Test_Enzyme_Restriction.test_cut_positions">
+<span class="sig-name descname"><span class="pre">test_cut_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Test_Enzyme_Restriction.test_cut_positions" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função cut_positions() da classe Enzyme_Restriction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Test_Enzyme_Restriction.test_cut_positions_re">
+<span class="sig-name descname"><span class="pre">test_cut_positions_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Test_Enzyme_Restriction.test_cut_positions_re" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função cut_positions_re() da classe Enzyme_Restriction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Test_Enzyme_Restriction.test_cut_subsequences">
+<span class="sig-name descname"><span class="pre">test_cut_subsequences</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Test_Enzyme_Restriction.test_cut_subsequences" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função cut_subsequences() da classe Enzyme_Restriction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Enzyme_restriction.Test_Enzyme_Restriction.test_cut_subsequences_re">
+<span class="sig-name descname"><span class="pre">test_cut_subsequences_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Enzyme_restriction.Test_Enzyme_Restriction.test_cut_subsequences_re" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função cut_subsequences_re() da classe Enzyme_Restriction.</p>
 </dd></dl>
 
 </dd></dl>

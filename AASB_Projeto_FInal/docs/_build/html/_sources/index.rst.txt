@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Projeto AASB's documentation!
+Bem vindos à documentação do nosso Projeto AASB!
 
 Bom dia, Professor!
 
@@ -15,6 +15,8 @@ Está aqui a documentação relativa ao nosso código
 .. include:: Alinhamento_Nw_Sw_Mult.rst
 .. include:: BD_Blast.rst
 .. include:: Motifs.rst
+.. include:: Prosite.rst
+.. include:: Enzyme_restriction.rst
 
 
 Indices and tables
