@@ -5,20 +5,17 @@
 
 Welcome to Projeto AASB's documentation!
 
-# Ola
+Bom dia, Professor!
 
-## Ola
+Está aqui a documentação relativa ao nosso código
 
 ========================================
 
+.. include:: Seqs.rst
+.. include:: Alinhamento_Nw_Sw_Mult.rst
+.. include:: BD_Blast.rst
+.. include:: Motifs.rst
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-   
-   modules
-   mymarkdown
-   teste_2
 
 Indices and tables
 ==================
@@ -26,3 +23,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

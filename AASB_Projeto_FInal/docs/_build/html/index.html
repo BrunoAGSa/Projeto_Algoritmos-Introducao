@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Indices and tables &mdash; Projeto AASB  documentation</title>
+  <title>Seqs module &mdash; Projeto AASB  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,7 @@
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="AASB_Projeto_FInal" href="modules.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -37,13 +36,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">AASB_Projeto_FInal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mymarkdown.html">Example Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="teste_2.html">teste_2 module</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Seqs module</a></li>
+<li><a class="reference internal" href="#module-Alinhamento_Nw_Sw_Mult">Alinhamento_Nw_Sw_Mult module</a></li>
+<li><a class="reference internal" href="#module-BD_Blast">BD_Blast module</a></li>
+<li><a class="reference internal" href="#module-Motifs">Motifs module</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
-
+</div>
         </div>
       </div>
     </nav>
@@ -58,7 +59,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Indices and tables</li>
+      <li class="breadcrumb-item active">Seqs module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -69,28 +70,819 @@
            <div itemprop="articleBody">
              
   <p>Welcome to Projeto AASB’s documentation!</p>
-<p># Ola</p>
-<p>## Ola</p>
+<p>Bom dia, Professor!</p>
+<p>Está aqui a documentação relativa ao nosso código</p>
 <hr class="docutils" />
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">AASB_Projeto_FInal</a><ul class="simple">
+<section id="module-Seqs">
+<span id="seqs-module"></span><h1>Seqs module<a class="headerlink" href="#module-Seqs" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Seqs.Seq">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Seqs.</span></span><span class="sig-name descname"><span class="pre">Seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe usada para manipular e transformar os diferentes tipos de sequências através de diferentes processos.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.count_nucleotides">
+<span class="sig-name descname"><span class="pre">count_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.count_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA e conta o número dos diferentes nucleótidos presentes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista com a contagem dos diferentes núcleotidos.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.freq_nucleotides">
+<span class="sig-name descname"><span class="pre">freq_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.freq_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA, estima a frequência dos diferentes nucleótidos presentes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista com a frequência dos diferentes nucleótidos.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_all_prots">
+<span class="sig-name descname"><span class="pre">get_all_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_all_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA e permite obter todas as possíveis proteínas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista das proteínas</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_codons">
+<span class="sig-name descname"><span class="pre">get_codons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_codons" title="Permalink to this definition"></a></dt>
+<dd><p>Função que recebe uma sequência de DNA ou RNA e transforma cada conjunto de 3 nucleótidos, presentes ao longo da sequência, no respetivo codão.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista de codões.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_orfs">
+<span class="sig-name descname"><span class="pre">get_orfs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_orfs" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA origina diferentes tipos de ORFS.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista das ORFS</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_prots">
+<span class="sig-name descname"><span class="pre">get_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de aminoácidos gera as diferentes proteínas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista de proteínas</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_type">
+<span class="sig-name descname"><span class="pre">get_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_type" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência, classifica-a em DNA, RNA ou AMINO ACID SEQUENCE.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Classificação da sequência.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.traducao">
+<span class="sig-name descname"><span class="pre">traducao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.traducao" title="Permalink to this definition"></a></dt>
+<dd><p>“Função que a partir de uma sequência de DNA, origina uma sequência de aminoácidos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sequência de aminoácidos</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.transcricao">
+<span class="sig-name descname"><span class="pre">transcricao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.transcricao" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA, devolve o transcrito da mesma.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sequência do transcrito.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Seqs.Test_Seq">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Seqs.</span></span><span class="sig-name descname"><span class="pre">Test_Seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_count_nucleotides">
+<span class="sig-name descname"><span class="pre">test_count_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_count_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função count_nucleotides() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_freq_nucleotides">
+<span class="sig-name descname"><span class="pre">test_freq_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_freq_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função freq_nucleotides() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_all_prots">
+<span class="sig-name descname"><span class="pre">test_get_all_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_all_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_all_prots() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_codons">
+<span class="sig-name descname"><span class="pre">test_get_codons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_codons" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_codons() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_orfs">
+<span class="sig-name descname"><span class="pre">test_get_orfs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_orfs" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_orfs() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_prots">
+<span class="sig-name descname"><span class="pre">test_get_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_prots() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_type">
+<span class="sig-name descname"><span class="pre">test_get_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_type" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_type() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_traducao">
+<span class="sig-name descname"><span class="pre">test_traducao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_traducao" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função traducao() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_transcricao">
+<span class="sig-name descname"><span class="pre">test_transcricao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_transcricao" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função transcricao() da classe Seq.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Alinhamento_Nw_Sw_Mult">
+<span id="alinhamento-nw-sw-mult-module"></span><h1>Alinhamento_Nw_Sw_Mult module<a class="headerlink" href="#module-Alinhamento_Nw_Sw_Mult" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Mat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">Mat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Mat" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que permite criar e manipular Matrizes</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Mat.numCols">
+<span class="sig-name descname"><span class="pre">numCols</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Mat.numCols" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter o númeor de colunas da Matriz</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Valor de colunas da Matriz</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Mat.numRows">
+<span class="sig-name descname"><span class="pre">numRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Mat.numRows" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter o número de linhas da Matriz</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Valor de linhas da Matriz</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.MultipleAlign">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">MultipleAlign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista_seqs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.MultipleAlign" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que permite realizar o alinhamento múltiplo de várias sequências</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.MultipleAlign.align">
+<span class="sig-name descname"><span class="pre">align</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.MultipleAlign.align" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite realizar o Alinhamento Progressivo das Sequências</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista com o alinhamento entre todas as sequências</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.NW">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">NW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.NW" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que permite efetuar o Algoritmo de Needleman Wunsch de forma a realizar o alinhamento Global de um par de sequências.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.NW.max_score">
+<span class="sig-name descname"><span class="pre">max_score</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.NW.max_score" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter o max score do alinhamento</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Max Score</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.NW.rebuild">
+<span class="sig-name descname"><span class="pre">rebuild</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.NW.rebuild" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter um possivel alinhamento das sequências</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sequências alinhadas</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.NW.score_mat">
+<span class="sig-name descname"><span class="pre">score_mat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.NW.score_mat" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter a Matriz S (Score)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Matriz S</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.NW.trace_mat">
+<span class="sig-name descname"><span class="pre">trace_mat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.NW.trace_mat" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter a Matriz T (Trace)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Matriz T (Trace)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.SW">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">SW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.SW" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que permite efetuar o Algoritmo de Smith Waterman de forma a realizar o alinhamento Local de um par de sequências.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.SW.max_score">
+<span class="sig-name descname"><span class="pre">max_score</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.SW.max_score" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter o max score do alinhamento</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Valor do Max Score</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.SW.rebuild">
+<span class="sig-name descname"><span class="pre">rebuild</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.SW.rebuild" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter um possivel alinhamento das sequências</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sequências alinhadas</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.SW.score_mat">
+<span class="sig-name descname"><span class="pre">score_mat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.SW.score_mat" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter a Matriz S (Score)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Matriz S</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.SW.trace_mat">
+<span class="sig-name descname"><span class="pre">trace_mat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.SW.trace_mat" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter a Matriz T (Trace)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Matriz T (Trace)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_MultipleAlign">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">Test_MultipleAlign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_MultipleAlign" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Conjunto de testes para a Classe MultipleAlign</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_MultipleAlign.test_align">
+<span class="sig-name descname"><span class="pre">test_align</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_MultipleAlign.test_align" title="Permalink to this definition"></a></dt>
+<dd><p>Testar função Align</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_NW">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">Test_NW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_NW" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Conjunto de testes para a Classe NW</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_NW.test_max_score">
+<span class="sig-name descname"><span class="pre">test_max_score</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_NW.test_max_score" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função max_score</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_NW.test_rebuild">
+<span class="sig-name descname"><span class="pre">test_rebuild</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_NW.test_rebuild" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função rebuild</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_SW">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">Test_SW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_SW" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Conjunto de testes para a Classe SW</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_SW.test_max_score">
+<span class="sig-name descname"><span class="pre">test_max_score</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_SW.test_max_score" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a funçao max_score</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.Test_SW.test_rebuild">
+<span class="sig-name descname"><span class="pre">test_rebuild</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.Test_SW.test_rebuild" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função rebuild</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.consensus">
+<span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">consensus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.consensus" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter o Consensus das 2 Sequências</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s1</strong> (<em>str</em>) – Sequencia 1</p></li>
+<li><p><strong>s2</strong> (<em>str</em>) – Sequencia 2</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="mymarkdown.html">Example Markdown</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#h2-heading">h2 Heading</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#horizontal-rules">Horizontal Rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#typographic-replacements">Typographic replacements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#emphasis">Emphasis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#blockquotes">Blockquotes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#lists">Lists</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mymarkdown.html#code">Code</a></li>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Consensus das Sequências</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Alinhamento_Nw_Sw_Mult.subst">
+<span class="sig-prename descclassname"><span class="pre">Alinhamento_Nw_Sw_Mult.</span></span><span class="sig-name descname"><span class="pre">subst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alinhamento_Nw_Sw_Mult.subst" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-BD_Blast">
+<span id="bd-blast-module"></span><h1>BD_Blast module<a class="headerlink" href="#module-BD_Blast" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="BD_Blast.Blast">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">Blast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que permite realizar um Blast Simplificado</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Blast.best_hit">
+<span class="sig-name descname"><span class="pre">best_hit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast.best_hit" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite devolver a extensão de maior score (no caso de empate, deverá devolver a de menor tamanho que aparece primeiro)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Tuplo com a extensão que possui maior score</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Blast.extend_hit">
+<span class="sig-name descname"><span class="pre">extend_hit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast.extend_hit" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite estende um hit em cada direção se o nº de matches for de pelo menos metade do tamanho da extensão</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em>) – Query</p></li>
+<li><p><strong>seq</strong> (<em>str</em>) – Seq</p></li>
+<li><p><strong>hit</strong> (<em>tuple</em>) – Hit</p></li>
+<li><p><strong>w</strong> (<em>int</em>) – w</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="teste_2.html">teste_2 module</a></li>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tuplo com o índice do início do hit estendido na query, na sequência, o tamanho e o nºde matches</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Blast.extend_hit_any_direction">
+<span class="sig-name descname"><span class="pre">extend_hit_any_direction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">o1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">o2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast.extend_hit_any_direction" title="Permalink to this definition"></a></dt>
+<dd><p>Função auxliar que permite extender o hit em ambas as direções</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Blast.get_all_offsets">
+<span class="sig-name descname"><span class="pre">get_all_offsets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast.get_all_offsets" title="Permalink to this definition"></a></dt>
+<dd><p>Função Auxiliar que permite devolver todos os índices das ocorrências de uma substring numa string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s1</strong> (<em>str</em>) – Substring</p></li>
+<li><p><strong>s2</strong> (<em>str</em>) – String</p></li>
 </ul>
-</div>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dicionário com todas as ocorrèncias da substring na string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Blast.hits">
+<span class="sig-name descname"><span class="pre">hits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast.hits" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite gerar uma lista de hits</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>qm</strong> (<em>dict</em>) – Dicionário proveninete da Função query_map</p></li>
+<li><p><strong>seq</strong> (<em>str</em>) – Sequência Proveniente da base de dados</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Lista de hits em que cada elemento é um tuplo com os indices</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Blast.query_map">
+<span class="sig-name descname"><span class="pre">query_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Blast.query_map" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite devolver um dicionário em que as chaves são as sequências e os valores são uma lista dos índices</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em>) – Query</p></li>
+<li><p><strong>w</strong> (<em>int</em>) – W</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dicionário em que as chaves são as sequências e os valores são uma lista dos índice</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">Test_Blast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Estes Testes foram baseados nos exemplos fornecidos pelo Professor Rui (inputs/outputs) durantes
+as aulas teóricas</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_best_hit">
+<span class="sig-name descname"><span class="pre">test_best_hit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_best_hit" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função best_hit</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_extend_hit">
+<span class="sig-name descname"><span class="pre">test_extend_hit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_extend_hit" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função extend_hit</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_extend_hit_any_direction_left">
+<span class="sig-name descname"><span class="pre">test_extend_hit_any_direction_left</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_extend_hit_any_direction_left" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função extend_hit_any_direction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_extend_hit_any_direction_right">
+<span class="sig-name descname"><span class="pre">test_extend_hit_any_direction_right</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_extend_hit_any_direction_right" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função extend_hit_any_direction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_get_all_offsets">
+<span class="sig-name descname"><span class="pre">test_get_all_offsets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_get_all_offsets" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função get_all_offsets</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_hits">
+<span class="sig-name descname"><span class="pre">test_hits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_hits" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função test_hits</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_Blast.test_query_map">
+<span class="sig-name descname"><span class="pre">test_query_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_Blast.test_query_map" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função query_map</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="BD_Blast.Test_DataBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">Test_DataBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_DataBase" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Conjunto de testes para a DataBase</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_DataBase.test_database">
+<span class="sig-name descname"><span class="pre">test_database</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_DataBase.test_database" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a integridade da Base de Dados</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BD_Blast.Test_DataBase.test_database_2">
+<span class="sig-name descname"><span class="pre">test_database_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.Test_DataBase.test_database_2" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a integridade da Base de Dados</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="BD_Blast.connect_database">
+<span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">connect_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'127.0.0.1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'root'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'login123'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Base</span> <span class="pre">Dados</span> <span class="pre">IAP'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.connect_database" title="Permalink to this definition"></a></dt>
+<dd><p>Funçao que permite ao utilizador conectar à base de dados (Base Dados IAP)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> (<em>str</em><em>, </em><em>optional</em>) – Host . Defaults to “127.0.0.1”.</p></li>
+<li><p><strong>user</strong> (<em>str</em><em>, </em><em>optional</em>) – User . Defaults to “root”.</p></li>
+<li><p><strong>password</strong> (<em>str</em><em>, </em><em>optional</em>) – Password . Defaults to “login123”.</p></li>
+<li><p><strong>database</strong> (<em>str</em><em>, </em><em>optional</em>) – Database . Defaults to “Base Dados IAP”.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="BD_Blast.get_all_organisms">
+<span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">get_all_organisms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.get_all_organisms" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter todos os organismos presentes na Base de Dados Predefinida</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Contêm nome de Organimos</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>lista</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="BD_Blast.get_all_seqs">
+<span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">get_all_seqs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.get_all_seqs" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter todas as sequências presentes na Base de Dados</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista com todas sequências presentes na Base de Dados</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="BD_Blast.get_seq_from_organism">
+<span class="sig-prename descclassname"><span class="pre">BD_Blast.</span></span><span class="sig-name descname"><span class="pre">get_seq_from_organism</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">organism</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BD_Blast.get_seq_from_organism" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite obter a sequência do Organismo pretendido</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>organism</strong> (<em>str</em>) – Organismo Presente na base de dados</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sequência do Organismo</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-Motifs">
+<span id="motifs-module"></span><h1>Motifs module<a class="headerlink" href="#module-Motifs" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Motifs.Motifs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Motifs.</span></span><span class="sig-name descname"><span class="pre">Motifs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_seqs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Motifs" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que permite gerar Motifs probabilisticos</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Motifs.PSSM">
+<span class="sig-name descname"><span class="pre">PSSM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Motifs.PSSM" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite gerar a Matriz PSSM</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pseudo_count</strong> (<em>int</em><em>, </em><em>optional</em>) – pseudocontagem. Defaults to 0.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Matriz PSSM</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Motifs.PWM">
+<span class="sig-name descname"><span class="pre">PWM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Motifs.PWM" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite gerar a Matriz PWM</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pseudo_count</strong> (<em>int</em><em>, </em><em>optional</em>) – pseudocontagem. Defaults to 0.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Matriz PWM</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Motifs.contagens">
+<span class="sig-name descname"><span class="pre">contagens</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Motifs.contagens" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite devolver a frequência dos elementos das sequências</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Matriz das Contagens</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Motifs.most_prob_seq">
+<span class="sig-name descname"><span class="pre">most_prob_seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Motifs.most_prob_seq" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite devolver a sequência mais provável de ocorrer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pseudo_count</strong> (<em>int</em><em>, </em><em>optional</em>) – pseudocontagem. Defaults to 0.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sequência mais provável de ocorrer</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Motifs.prob_seq">
+<span class="sig-name descname"><span class="pre">prob_seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Motifs.prob_seq" title="Permalink to this definition"></a></dt>
+<dd><p>Função que permite devolver a probabilidade de uma sequência</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seq</strong> (<em>str</em>) – Sequência</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Probabilidade da sequência</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Motifs.Test_Motifs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Motifs.</span></span><span class="sig-name descname"><span class="pre">Test_Motifs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Test_Motifs" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Conjunto de testes para a Classe Motifs</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Test_Motifs.test_most_prob_seq">
+<span class="sig-name descname"><span class="pre">test_most_prob_seq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Test_Motifs.test_most_prob_seq" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função most_prob_seq</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Motifs.Test_Motifs.test_prob_seq">
+<span class="sig-name descname"><span class="pre">test_prob_seq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Motifs.Test_Motifs.test_prob_seq" title="Permalink to this definition"></a></dt>
+<dd><p>Testar a função prob_seq</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 <section id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
 <ul class="simple">
@@ -103,9 +895,7 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="modules.html" class="btn btn-neutral float-right" title="AASB_Projeto_FInal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

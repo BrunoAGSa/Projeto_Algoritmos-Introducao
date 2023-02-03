@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seqs module &mdash; Projeto AASB  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Projeto AASB
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Seqs module</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Projeto AASB</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Seqs module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Seqs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Seqs">
+<span id="seqs-module"></span><h1>Seqs module<a class="headerlink" href="#module-Seqs" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Seqs.Seq">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Seqs.</span></span><span class="sig-name descname"><span class="pre">Seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe usada para manipular e transformar os diferentes tipos de sequências através de diferentes processos.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.count_nucleotides">
+<span class="sig-name descname"><span class="pre">count_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.count_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA e conta o número dos diferentes nucleótidos presentes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista com a contagem dos diferentes núcleotidos.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.freq_nucleotides">
+<span class="sig-name descname"><span class="pre">freq_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.freq_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA, estima a frequência dos diferentes nucleótidos presentes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista com a frequência dos diferentes nucleótidos.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_all_prots">
+<span class="sig-name descname"><span class="pre">get_all_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_all_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA e permite obter todas as possíveis proteínas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista das proteínas</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_codons">
+<span class="sig-name descname"><span class="pre">get_codons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_codons" title="Permalink to this definition"></a></dt>
+<dd><p>Função que recebe uma sequência de DNA ou RNA e transforma cada conjunto de 3 nucleótidos, presentes ao longo da sequência, no respetivo codão.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista de codões.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_orfs">
+<span class="sig-name descname"><span class="pre">get_orfs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_orfs" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA origina diferentes tipos de ORFS.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista das ORFS</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_prots">
+<span class="sig-name descname"><span class="pre">get_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de aminoácidos gera as diferentes proteínas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Lista de proteínas</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.get_type">
+<span class="sig-name descname"><span class="pre">get_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.get_type" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência, classifica-a em DNA, RNA ou AMINO ACID SEQUENCE.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Classificação da sequência.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.traducao">
+<span class="sig-name descname"><span class="pre">traducao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.traducao" title="Permalink to this definition"></a></dt>
+<dd><p>“Função que a partir de uma sequência de DNA, origina uma sequência de aminoácidos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sequência de aminoácidos</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Seq.transcricao">
+<span class="sig-name descname"><span class="pre">transcricao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Seq.transcricao" title="Permalink to this definition"></a></dt>
+<dd><p>Função que a partir de uma sequência de DNA ou RNA, devolve o transcrito da mesma.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sequência do transcrito.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Seqs.Test_Seq">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Seqs.</span></span><span class="sig-name descname"><span class="pre">Test_Seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_count_nucleotides">
+<span class="sig-name descname"><span class="pre">test_count_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_count_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função count_nucleotides() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_freq_nucleotides">
+<span class="sig-name descname"><span class="pre">test_freq_nucleotides</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_freq_nucleotides" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função freq_nucleotides() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_all_prots">
+<span class="sig-name descname"><span class="pre">test_get_all_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_all_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_all_prots() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_codons">
+<span class="sig-name descname"><span class="pre">test_get_codons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_codons" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_codons() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_orfs">
+<span class="sig-name descname"><span class="pre">test_get_orfs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_orfs" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_orfs() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_prots">
+<span class="sig-name descname"><span class="pre">test_get_prots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_prots" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_prots() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_get_type">
+<span class="sig-name descname"><span class="pre">test_get_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_get_type" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função get_type() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_traducao">
+<span class="sig-name descname"><span class="pre">test_traducao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_traducao" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função traducao() da classe Seq.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Seqs.Test_Seq.test_transcricao">
+<span class="sig-name descname"><span class="pre">test_transcricao</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Seqs.Test_Seq.test_transcricao" title="Permalink to this definition"></a></dt>
+<dd><p>Função usada para testar a função transcricao() da classe Seq.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bruno Sá.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
